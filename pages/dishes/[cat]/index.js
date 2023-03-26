@@ -1,20 +1,24 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Dishes = ({ data, pageName }) => {
+const Dishes = (props, {pageName}) => {
 
+    const data = props.data;
 
     return (
         <div>
-            <h1>{pageName} Menu</h1> 
-            {data.map((re) => (
-                <div key={re.id} className="card">
-                    <Link legacyBehavior key={data.id} href={`/dishes/${re.restaurant}/${re.id}`} passHref>
-                        <div key={data.id} className="image">
-                        <Image key={data.id} alt={re.name} height={300} width={300} src={re.image}/>
-                        </div>
-                    </Link>                  
-                </div>
+            <h1>{pageName} Menu</h1>
+            {data.map((posts) => (
+                <React.Fragment key={posts.id}>
+                    <div className="card">
+                        <Link legacyBehavior href={`/dishes/${posts.restaurant}/${posts.id}`} passHref>
+                            <div className="image">
+                                <Image alt={posts.name} height={300} width={300} src={posts.image}/>
+                            </div>
+                        </Link>                  
+                    </div>
+                </React.Fragment>
                 ))}
         </div>
     )

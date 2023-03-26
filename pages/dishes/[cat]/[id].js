@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Button } from "reactstrap";
 
 
-const MenuItem = ({data}) => {
-    console.log(data);
+const MenuItem = (props) => {
+    const data = props.data;
 
     return (
         <div key={data.id} className="card">

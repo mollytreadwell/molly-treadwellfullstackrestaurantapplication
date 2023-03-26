@@ -4,21 +4,22 @@ import Image from 'next/image'
 
 
 
-export default function Dishes({ data }) {
+export default function Dishes(props) {
+    const data = props.data;
     return (<>
         <h1>Home</h1>
-            {data.map((re) => (
-            <React.Fragment key={re.id}>
-                <Link legacyBehavior href={`/dishes/${re.id}`}>
+            {data.map((post) => (
+            <React.Fragment key={post.id}>
+                <Link legacyBehavior href={`/dishes/${post.id}`}>
                     <a className='card'>
                     <div className='image'>
-                    <Image alt={re.name} height={300} width={300} src={re.image}/>
+                    <Image alt={post.name} height={300} width={300} src={post.image}/>
                     </div>
                     </a>             
                 </Link>
                 <div className='content'>
-                    <h2>{re.name}</h2>
-                    <p>{re.description}</p>
+                    <h2>{post.name}</h2>
+                    <p>{post.description}</p>
                 </div>
             </React.Fragment>
             ))}

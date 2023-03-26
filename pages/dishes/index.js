@@ -2,14 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Dish = ({data}) => {
+const Dish = (props) => {
+    const data = props.data;
+
     return (
-        <React.Fragment key={re.id}>
+        <React.Fragment key={data.id}>
             <Link legacyBehavior href="/menu">Order Online Today!</Link><br>
             </br>
-            {data.map((re) => (
-                <a key={re.id} href={`/dishes/${re.id}`}>
-                    <Image alt={re.id} src={re.image} height={150} width={200} style={{padding:5}}/>
+            {data.map((posts) => (
+                <a key={posts.id} href={`/dishes/${posts.id}`}>
+                    <Image alt={posts.id} src={posts.image} height={150} width={200} style={{padding:5}}/>
                 </a>
             ))}
         </React.Fragment>
