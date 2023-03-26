@@ -13,6 +13,11 @@
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.8.0",
+    "reactstrap": "^9.1.6",
+    "recoil": "^0.7.7",
+    "use-snipcart": "^1.2.0"
   }
 }

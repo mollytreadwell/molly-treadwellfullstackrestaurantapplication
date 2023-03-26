@@ -1,0 +1,31 @@
+{
+    "restaurants":[
+
+    {"id":"Woods Hill","name":"Woods Hill","description":"Delicious flavorful meals with the best nutrient rich and sustainable ingredients available. \nLocated in the Boston Seaport District with magnificent harbor views. Owner Kristin Canty and Chef Charlie Foster bring their passions of food, family farms, and sustainable sourcing to Pier 4. ", "image":"/Woods-Hill-Pier-4-dining-room.jpeg"},
+    
+    {"id":"Karma","name":"Karma","description":"Fusion sushi, a cross between Japanese flavors and the delicate sauce and styles of France, is Karma's specialty.  Our chefs add their own personal style and the outcome is so amazing that it has an almost addictive quality to it.","image":"/download.jpeg"},
+    
+    {"id":"Fiorellas","name":"Fiorellas","description":"At Fiorella's, we put our passion for life and our love for hospitality into everything we do. Life is flavored by sweet moments, and we truly want you to cherish them all. Bring life's best ingredients together with the ones you love and savor every bite.","image":"/Fiorellas-5.jpeg"}
+    ],
+
+    "dishes":[
+
+    {"id":"tuna","name":"Bluefin Tuna","description":"Aji amarillo, torn herbs, beech mushrooms, charred gooseberries, puffed tapioca   {GF, DF, NF}","price":25,"image":"/bluefin.jpeg","restaurant":"Woods Hill","quantity":1},
+        
+    {"id":"broccoli","name":"Charred Broccoli","description":"Cheddar and smoked garlic aioli, broccoli leaf pistou, crispy leeks   {GF, NF, VEG}","price":17,"image":"/broc.jpeg","restaurant":"Woods Hill","quantity":1},
+        
+    {"id":"beesknees","name":"Lavender Bees Knees","description":"Sipsmith London Dry Gin, lavender honey & lemon","price":17,"image":"/knee.jpeg","restaurant":"Woods Hill","quantity":1},
+        
+    {"id":"caprese","name":"Caprese","description":"Sliced tomatoes, fresh mozzarella, basil and Italian vinaigrette drizzled with balsamic glaze","price":13,"image":"/cap.jpeg","restaurant":"Fiorellas","quantity":1},
+        
+    {"id":"figbacon","name":"Fig and Bacon Flatbread","description":"Sweet fig jam, crispy bacon and crumbled goat's cheese, topped with baby arugula and balsamic glaze","price":15,"image":"/fig.jpeg","restaurant":"Fiorellas","quantity":1},
+        
+    {"id":"sangria","name":"Red Sangria","description":"Our own secret recipe","price":10,"image":"/sang.jpeg","restaurant":"Fiorellas","quantity":1},
+        
+    {"id":"dragon","name":"Fired Dragon Maki Special","description":"Raw. Spicy tuna, tobiko crumb on top of the roll with tempura crab meat, avocado and cucumber. Spicy.","price":15,"image":"/drag.jpeg","restaurant":"Karma","quantity":1},
+        
+    {"id":"springroll","name":"Vegetable Spring Rolls","description":"Two pieces per order","price":4,"image":"/pancake.jpeg","restaurant":"Karma","quantity":1},
+        
+    {"id":"cosmo","name":"Cosmopolitan","description":"Vodka cocktail made with triple sec, cranberry juice, and lime juice. ","price":10,"image":"/cosmo.jpeg","restaurant":"Karma","quantity":1}
+    ]
+}
