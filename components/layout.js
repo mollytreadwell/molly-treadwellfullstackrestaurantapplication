@@ -35,7 +35,7 @@ const {cart = {}} = useSnipcart();
         </div>
       </div>
     </header>
-        <Container>{props.children}</Container>
+        <Container className="body">{props.children}</Container>
       </div>
     )
 }

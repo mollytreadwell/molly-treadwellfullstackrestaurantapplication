@@ -8,16 +8,18 @@ export default function Menu(props) {
 
   return (
       <div>
+        <h1></h1>
         {dish.map(post =>
           <React.Fragment key={post.id}>
-            <div className="card">
-              <div className='image'>
+            <div className="menu-card">
                 <Image key={post.id} src={post.image} height={100} width={120} alt={post.name}/>
+                <div className='menu-card-content'>
+              <div className='menu-content'> 
+              <h2>{post.name}</h2>
+              <p>{post.restaurant}</p>
               </div>
-            <h2>{post.name}</h2><br></br>
-            <p>{post.restaurant}</p>
-            <p>${post.price}</p>
-              <div>
+              </div>
+                <div className='button'>
                <Button key={post.id} className="snipcart-add-item"
                   data-item-id={post.name}
                   data-item-price={post.price}
@@ -26,8 +28,8 @@ export default function Menu(props) {
                   data-item-name={post.name}>
                   Add to Cart
                </Button>
-              </div>
-            </div>
+               </div>
+               </div>
           </React.Fragment>)}
       </div>
   )

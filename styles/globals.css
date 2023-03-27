@@ -1,29 +1,31 @@
 h1 {
     color:black; 
+    padding-top: 70px;
 }
 
 p {
     font-size: 12px;
+}
+body {
+  background-color:antiquewhite;
 }
 
 .topNav {
 display: flex;
 justify-content: space-between;
 align-content: center;
-background-color: gray;
+background-color:slategray;
+z-index: 300;
+width: 100%;
+position: fixed;
 }
 
 .topNav-right {
     float: right;
-    color: white;
+    color:beige;
+    padding: 10px;
 }
 
-.nav-cart{
-    color: white;
-    background-color: red;
-    border-radius: 50%;
-    font-size: 12px;
-}
 
 ul {
   display: flex;
@@ -44,6 +46,8 @@ ul {
   align-content: center;
   align-items: center;
   padding: 15px;
+  background-color: transparent;
+  z-index: 0;
   }
 
 .content {
@@ -55,6 +59,53 @@ ul {
     align-items: center;
     text-align: center;
 }
+
+.menu-card {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+  padding-top: 30px;
+  margin-top: 70px;
+  border: 2px solid black;
+  margin: 5px;
+  width: 100%;
+  }
+
+  .menu-card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid black;
+    margin: 5px;
+    width: 500px;
+    }
+
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-p{
+  text-align: left;
+}
+
+.button {
+  float: right;
+}
+
 
 .link {
   color: red;

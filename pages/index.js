@@ -13,13 +13,13 @@ export default function Dishes(props) {
                 <Link legacyBehavior href={`/dishes/${post.id}`}>
                     <a className='card'>
                     <div className='image'>
-                    <Image alt={post.name} height={300} width={300} src={post.image}/>
+                    <Image alt={post.name} height={300} width={500} src={post.image}/>
                     </div>
                     </a>             
                 </Link>
                 <div className='content'>
-                    <h2>{post.name}</h2>
-                    <p>{post.description}</p>
+                    <h2 className='menu-card'>{post.name}</h2> 
+                    <p className='home-p'>{post.description}</p>
                 </div>
             </React.Fragment>
             ))}

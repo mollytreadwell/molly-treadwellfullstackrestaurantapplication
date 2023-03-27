@@ -11,7 +11,7 @@ const Dish = (props) => {
             </br>
             {data.map((posts) => (
                 <a key={posts.id} href={`/dishes/${posts.id}`}>
-                    <Image alt={posts.id} src={posts.image} height={150} width={200} style={{padding:5}}/>
+                    <Image alt={posts.id} src={posts.image} height={200} width={250} style={{padding:5}}/>
                 </a>
             ))}
         </React.Fragment>

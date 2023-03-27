@@ -5,7 +5,8 @@ import { Button } from "reactstrap";
 const MenuItem = (props) => {
     const data = props.data;
 
-    return (
+    return (<>
+        <h1></h1>
         <div key={data.id} className="card">
             <h2 >{data.name}</h2>
             <div className="image">
@@ -25,7 +26,7 @@ const MenuItem = (props) => {
             </div>
         </div>
         
-    )
+        </>)
 }
 export default MenuItem;
 
